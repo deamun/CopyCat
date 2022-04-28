@@ -60,7 +60,7 @@ class CopyCat extends React.Component {
     
     return (
       <div style={styles.divStyles}>
-        <h1 style={{marginBottom: '80px'}}>Copy Cat</h1>
+        <h1 style={{marginBottom: '80px'}}>Copy Cat {this.props.name ? this.props.name : 'Tom'}</h1>
         <input
             type='text'
             value={this.props.input}
@@ -84,7 +84,8 @@ CopyCat.propTypes = {
     copying: PropTypes.bool.isRequired,
     toggleTape: PropTypes.func.isRequired,
     input: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    name: PropTypes.string
 };
 
 export default CopyCat;
