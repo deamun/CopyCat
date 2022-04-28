@@ -69,6 +69,11 @@ export default class CopyCatContainer extends React.Component {
     const copying = this.state.copying;
     const toggleTape = this.toggleTape;
     
-    return <CopyCat />
+    return (
+        <CopyCat 
+            copying={this.state.copying}
+            toggleTape={this.toggleTape}
+        />
+    );
   };
 }
