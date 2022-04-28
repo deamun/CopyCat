@@ -62,8 +62,8 @@ class CopyCat extends React.Component {
         <h1 style={{marginBottom: '80px'}}>Copy Cat</h1>
         <input
             type='text'
-            value={}
-            onChange={} 
+            value={this.props.input}
+            onChange={this.props.onChange} 
         />
         <img 
           alt='cat'
