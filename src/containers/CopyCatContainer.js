@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const images = {
   copycat: 'https://content.codecademy.com/courses/React/react_photo_copycat.png',
