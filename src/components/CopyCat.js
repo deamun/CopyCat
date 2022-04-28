@@ -45,6 +45,7 @@
 
 import React from 'react';
 import {styles} from '../styles';
+import PropTypes from 'prop-types';
 
 const images = {
   copycat: 'https://content.codecademy.com/courses/React/react_photo_copycat.png',
@@ -78,5 +79,12 @@ class CopyCat extends React.Component {
     );
   };
 }
+
+CopyCat.propTypes = {
+    copying: PropTypes.bool.isRequired,
+    toggleTape: PropTypes.func.isRequired,
+    input: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired
+};
 
 export default CopyCat;
